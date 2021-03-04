@@ -66,7 +66,7 @@ public class Task2 {
         else if(avg>e) System.out.println("Average is just greater than number 2");
         else if(avg>f) System.out.println("Average is just greater than number3");
 
-        task 3 number 4
+        //task 3 number 4
         System.out.println("Enter number to determine positive or negative");
         int num=sc.nextInt();
         while(num<=5){
@@ -83,7 +83,7 @@ public class Task2 {
             System.out.println("Number stream from 0 to 6 is "+i);
         }
 
-         even or odd
+        //even or odd
         int evenOdd=4;
         if(evenOdd%2!=0) System.out.println("New");
         else if(evenOdd%2==0 && evenOdd>=2 && evenOdd<=5) System.out.println("OLD");
