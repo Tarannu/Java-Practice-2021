@@ -89,7 +89,30 @@ public class Task4 {
         System.out.println("Returning even or odd based on majority even or odd"+resultant);
 
         String swapLetters="heLLo WOrld";
+        StringBuffer strBuffer=new StringBuffer(swapLetters.length());
+        for(int i=0;i<swapLetters.length();i++){
+            char c=swapLetters.charAt(i);
+            if(Character.isUpperCase(c)){
+                c=Character.toLowerCase(c);
+            }
+            else if(Character.isLowerCase(c)){
+                c=Character.toUpperCase(c);
+            }
+            strBuffer.append(c);
+        }
+        System.out.println("changed upper case and lower case before is "+swapLetters+" after "+strBuffer);
 
+        String braces="{{([ ) ] }}";
+        int countBraces=0;
+
+        for(int i=0;i<braces.length();i++){
+            char c=braces.charAt(i);
+            if (c == '(' || c =='{'||c=='[') countBraces++;
+            else if(c == ')' || c =='}'||c==']') countBraces--;
+
+        }
+        if(countBraces!=0) System.out.println("Invalid braces");
+        else System.out.println("valid braces");
 
 
     }
