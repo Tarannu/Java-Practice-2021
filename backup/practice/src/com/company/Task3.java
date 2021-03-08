@@ -87,8 +87,8 @@ public class Task3 {
 
         }
         System.out.println(result);
-        task 7
-        same as finding month number in previous for loop just in february year will be divided by leap year or 4
+        //task 7
+        //same as finding month number in previous for loop just in february year will be divided by leap year or 4
 
         //task 8
         System.out.println("Enter to verify leap year");
