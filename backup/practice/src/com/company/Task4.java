@@ -107,8 +107,18 @@ public class Task4 {
 
         for(int i=0;i<braces.length();i++){
             char c=braces.charAt(i);
-            if (c == '(' || c =='{'||c=='[') countBraces++;
-            else if(c == ')' || c =='}'||c==']') countBraces--;
+            if (c == '('){
+                countBraces++;
+                if(c==')') countBraces--;
+            }
+            if(c=='{'){
+                countBraces++;
+                if(c=='}') countBraces--;
+            }
+            if(c=='['){
+                countBraces++;
+                if(c==']') countBraces--;
+            }
 
         }
         if(countBraces!=0) System.out.println("Invalid braces");
