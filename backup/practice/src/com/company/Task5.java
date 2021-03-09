@@ -71,8 +71,38 @@ public class Task5 {
         for(int i=0;i<zeroArr.length;i++) {
             System.out.println(zeroArr[i]);
         }
+        int[] newArr=new int[]{1,2,3,4,5};
 
+        max=0;
+        min=999;
+        int sumMaxMin=0;
+        for(int i=0;i<newArr.length;i++) {
+            if (newArr[i] > max) {
+                max = newArr[i];
+            }// max=11;
+            if (newArr[i] < min) {
+                min = newArr[i];
+            }
+            sumMaxMin=min+max;
 
+        }
+        System.out.println("the min max sum is "+sumMaxMin);
+
+        //removing duplicate elements already done above
+
+        int[] sampleArr=new int[]{1,2,4,5,6};
+        int target=6;
+        int[] elements=new int[2];
+
+        for(int i=0;i<sampleArr.length-1;i++){
+            for(j=i+1;j<sampleArr.length-1;j++){
+                if(sampleArr[j]==target-sampleArr[i]){
+                    elements[0]=sampleArr[i];
+                    elements[1]=sampleArr[j];
+                }
+            }
+        }
+        System.out.println("The elements for the target sum is "+elements[0]+" & "+elements[1]);
 
 
 
