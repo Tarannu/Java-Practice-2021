@@ -104,7 +104,28 @@ public class Task5 {
         }
         System.out.println("The elements for the target sum is "+elements[0]+" & "+elements[1]);
 
+        int[] closestToZero=new int[]{-1,-4,-2,-3,1,5,6,7};
+        int minL=0;
+        int minR=1;
+        int minSum=closestToZero[0]+closestToZero[1];
+        int sumNearZero=999;
 
+        for(int i=0;i<closestToZero.length;i++){
+
+            for(j=i+1;j<closestToZero.length;j++){
+
+                    sumNearZero=closestToZero[i]+closestToZero[j];
+                if(Math.abs(minSum)>Math.abs(sumNearZero)){
+                    minSum=sumNearZero;
+                    minL=i;
+                    minR=j;
+                }
+            }
+
+        }
+        System.out.println("the two elements with sum closest to zero is "+closestToZero[minL]+" and "+closestToZero[minR]);
+
+        
 
 
 
